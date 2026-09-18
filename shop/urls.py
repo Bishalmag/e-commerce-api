@@ -8,7 +8,6 @@ router.register('products', ProductViewSet)
 router.register('carts', CartViewSet)
 router.register('cart-items', CartItemViewSet)
 
-urlpatterns =[
+urlpatterns = [
     path('', include(router.urls)),
-    path('api/', include(router.urls)),
 ]
